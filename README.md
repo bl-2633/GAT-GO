@@ -22,7 +22,7 @@ python GAT-GO.py --ModelPath <PATH> --Device <CUDA device> --BatchSize <BatchSiz
 \*\*\*\* Output \*\*\*\*  
 ```GAT-GO_Results.pt``` will be saved at ```<OutDir>``` which is a serialized dictionary indexed by sequence identifiers provided in ```<SeqIDs>```
 
-To extract the GO-terms from the result, please see the [Notebook](link) example. 
+To extract the GO-terms from the result, please see the [Notebook](https://github.com/bl-2633/GAT-GO/blob/main/examples/GAT-GO%20examples.ipynb) example. 
 # Data Format
 For each sequence in PDB/PDBmmseq dataset, a serialized dictionary stores the processed features used in GAT-GO. Details can be found below  
 1. ```data.seq: One-hot encoded primary sequence```  
