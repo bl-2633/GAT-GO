@@ -8,7 +8,7 @@ This is the official code repository for the paper "Accurate Protein Function Pr
 
 # Predict sequence function with GAT-GO
 To use GAT-GO with pre-processed data, we provided a ```data_loader``` which parses the pre-processed sequence features ussed in GAT-GO.  
-```GAT-GO.py``` can be used to make prediction with pre-processed seuqnces. Examples can be found in this [Notebook](link)  
+```GAT-GO.py``` can be used to make prediction with pre-processed seuqnces. Examples can be found in this [Notebook](https://github.com/bl-2633/GAT-GO/blob/main/examples/GAT-GO%20examples.ipynb)  
 ```
 python GAT-GO.py --ModelPath <PATH> --Device <CUDA device> --BatchSize <BatchSize> --SeqIDs <SeqIDs> --OutDir <OutDir>
 ```  
