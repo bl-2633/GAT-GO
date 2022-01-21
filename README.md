@@ -34,3 +34,4 @@ For each sequence in PDB/PDBmmseq dataset, a serialized dictionary stores the pr
 7. ```data.chain_id: Sequence identifier```
 
 # Data & Pre-trained model
+Pre-processed data and pre-trained model can be downloaded at this [link](https://drive.google.com/drive/folders/1--1zHFqOzB7pZ75G_td_T2e05qfoSlz6?usp=sharing)
