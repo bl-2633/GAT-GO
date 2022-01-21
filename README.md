@@ -1,5 +1,6 @@
 # GAT-GO:Accurate Protein Function Prediction via Graph Attention Networks with Predicted Structure Information
 [[paper]](https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbab502/6457163)
+<img src="images/Fig1.png">
  # Citation
 This is the official code repository for the paper "Accurate Protein Function Prediction via Graph Attention Networks with Predicted Structure Information".
 # Dependencies
