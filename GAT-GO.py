@@ -25,7 +25,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Predicting Protein function with GAT-GO')
     parser.add_argument('--ModelPath', help='Model to be used for inference', type=str)
     parser.add_argument('--Device', help='CUDA device for inference', type = int, default=0)
-    parser.add_argument('--BatchSize', help='Batch size for inference', type = str, default=4)
+    parser.add_argument('--BatchSize', help='Batch size for inference', type = int, default=4)
     parser.add_argument('--SeqIDs', help='Input seq file for inference', type=str)
     parser.add_argument('--OutDir', help='Output Directory to store result', type=str)
     args = parser.parse_args()
