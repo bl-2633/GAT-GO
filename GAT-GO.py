@@ -18,7 +18,6 @@ def predict(model, loader, device):
             model_pred = torch.sigmoid(model(esm_rep=esm_rep, seq = seq, pssm = pssm, seq_embed=seq_embed, A = contact, batch = batch_idx)).cpu().detach().numpy()
         for i, chain_id in enumerate(data.chain_id):
             results[chain_id] = model_pred[i,:]
-        break
     return results
 
 if __name__ == '__main__':
@@ -26,7 +25,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Predicting Protein function with GAT-GO')
     parser.add_argument('--ModelPath', help='Model to be used for inference', type=str)
     parser.add_argument('--Device', help='CUDA device for inference', type = int, default=0)
-    parser.add_argument('--BatchSize', help='Batch size for inference', type = str, default=4)
+    parser.add_argument('--BatchSize', help='Batch size for inference', type = int, default=4)
     parser.add_argument('--SeqIDs', help='Input seq file for inference', type=str)
     parser.add_argument('--OutDir', help='Output Directory to store result', type=str)
     args = parser.parse_args()
