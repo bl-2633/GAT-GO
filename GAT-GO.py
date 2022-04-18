@@ -18,7 +18,6 @@ def predict(model, loader, device):
             model_pred = torch.sigmoid(model(esm_rep=esm_rep, seq = seq, pssm = pssm, seq_embed=seq_embed, A = contact, batch = batch_idx)).cpu().detach().numpy()
         for i, chain_id in enumerate(data.chain_id):
             results[chain_id] = model_pred[i,:]
-        break
     return results
 
 if __name__ == '__main__':
